@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media de Tabelas</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+           font-size: 1.3em;
+           font-weight: bold;
+           padding: 10px; 
+        }
+        th, td {
+            border:  1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Area</th>
+                <th scope="col">Disciplina</th>
+                <th scope="colgroup">Notas</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+                <th scope="col">Media</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Forrest Gump</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Forrest Gump</td>
+            </tr>
+            <tr>
+                <th>Media de Exatas</th>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Humanas</th>
+                <td>Bruno Mendonca</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Gladiadores</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenco</td>
+                <td>Wall-e</td>
+                <td>Old Boy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Motta</td>
+                <td>Taxi Driver</td>
+                <td>Star Wars</td>
+                <td>Toy Storie</td>
+            </tr>
+            <tr>
+                <th>Media de Humanas</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
